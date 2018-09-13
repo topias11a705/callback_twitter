@@ -6,11 +6,15 @@
 </head>
 
 <body>
-
-<main>
-  <h1>GitHub Pages のサンプルです</h1>
-</main>
-
+<script>
+ if (location.search === ""){
+ //ただ閲覧されたときに移動するページ
+ location.href="https://twitter.com/";
+} else {
+ //URLに?oauth_verifier=...があった時にアプリに飛ばす
+ location.href="test://path"+location.search;
+}
+</script>
 
 </body>
 </html>
