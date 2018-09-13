@@ -1,61 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-    <meta charset="utf-8" />
+<head>
+<meta charset="UTF-8">
+<title>TipsNote : GitHub Pages Sample</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marx/2.0.4/marx.css">
+</head>
+<script type="text/javascript">
+if (location.search === ""){
+ //ãŸã é–²è¦§ã•ã‚ŒãŸã¨ãã«ç§»å‹•ã™ã‚‹ãƒšãƒ¼ã‚¸
+ location.href="URL";
+} else {
+ //URLã«?oauth_verifier=...ãŒã‚ã£ãŸæ™‚ã«ã‚¢ãƒ—ãƒªã«é£›ã°ã™
+ location.href="test://path"+location.search;
+}
+</script>
+<body>
+<main>
+  <h1>GitHub Pages ã®ã‚µãƒ³ãƒ—ãƒ«ã§ã™</h1>
+</main>
 
-  </head>
-
-  <body>
-    <p id="id_1">1. JS‘¤‚Éonclick‘‚¢‚ÄƒNƒŠƒbƒNƒCƒxƒ“ƒg”­‰ÎB</p>
-    <p id="id_2">2. JS‚Å‚Í–³–¼ŠÖ”‚àg‚¦‚é‚æI</p>
-    <p onclick="pClick()">3. HTML‚Åonclick‘®«‘‚¢‚½BƒNƒŠƒbƒN‚µ‚Ä‚İ‚ÄI</p>
-    <p id="id_3" class="foo-before">4. ƒNƒŠƒbƒN‚·‚é‚½‚ÑF•Ï‚í‚é‚æIiƒNƒ‰ƒX‚Ì“ü‚ê‘Ö‚¦‚ğjQuery‚ÅÀ‘•j</p>
-    <p id="id_4">5. ƒNƒŠƒbƒN‚·‚é‚ÆCSS’Ç‰Á‚³‚ê‚é‚æI</p>
-
-    <script type="text/javascript">
-      // •Ï”’è‹`iu//v‚©‚çn‚Ü‚és‚ÍƒRƒƒ“ƒgƒAƒEƒgj
-      var id_1 = document.getElementById("id_1");
-      var id_2 = document.getElementById("id_2");
-      var id_3 = document.getElementById("id_3");
-
-      // id_1iid_2j‚ğƒNƒŠƒbƒN‚µ‚½‚çAfunction‚Ì’†g‚ğÀs
-      id_1.onclick = function id1Click() {
-        alert("id_1ƒNƒŠƒbƒN‚µ‚½‚æI");
-      }
-      id_2.onclick = function () {
-        alert("id_2ƒNƒŠƒbƒNIŠÖ”–¼‚Í‘‚¢‚Ä‚à‘‚©‚È‚­‚Ä‚àOKI");
-      }
-
-      // HTML‘¤‚ÉƒNƒŠƒbƒNƒCƒxƒ“ƒg‹Lq
-      function pClick() {
-        alert("pƒ^ƒOƒNƒŠƒbƒNIHTML‚Åonclick‘®«‘‚¢‚½‚æI");
-      }
-    </script>
-
-    <script type="text/javascript">
-      var stylesheet = document.styleSheets.item(0);
-
-      // ã‚Å’è‹`‚µ‚½id_4‚Í‚±‚±‚Å‚àg‚¦‚é‚æI
-      id_4.onclick = function () {
-        //‘æ2ˆø”‚ÍAuCSS‚Ì‰½”Ô–Ú‚Ìƒ‹[ƒ‹‚É‚·‚é‚©vB0n‚Ü‚è‚Ì”Ô†B
-        stylesheet.insertRule("#id_4 {font-size: 20px;}", 0);
-        stylesheet.insertRule("#id_4 {background-color: pink;}", stylesheet.cssRules.length);
-      }
-    </script>
-
-    <!-- ‚±‚ê‚ÅjQueryg‚¦‚éB‚½‚¾‚µƒlƒbƒg‚Â‚È‚ª‚Á‚Ä‚ê‚ÎB -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-
-    <script type="text/javascript">
-      // $ŠÖ”‚ÍjQuery‚Ì’è”ÔI
-      $('#id_3').click(function() {
-        this.className = (this.className === 'foo-before') ? 'foo-after' : 'foo-before';
-      });
-
-      document.writeln("<p>6. JS‚ÅHTML‹LqIiƒŠƒ[ƒh‚·‚é‚½‚Ñ­‚µ•\¦‚ª’x‚ê‚Ä‚é‚¯‚ÇA‚í‚©‚é‚©‚ÈHj</p>");
-      document.writeln("<p>7. URL‚ÍA" + document.URL + "‚¾‚æI</p>");
-      document.writeln("<p>8. ‚±‚Ìƒy[ƒW‚Ìtitle‚ÍAu" + document.title + "v‚¾‚æI</p>");
-    </script>
-  </body>
+<script>
+console.log('GitHub Pages Sample');
+</script>
+</body>
 </html>
